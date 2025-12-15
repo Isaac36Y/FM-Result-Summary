@@ -19,7 +19,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 
@@ -51,7 +51,7 @@ h1, h2, p {
     justify-content: center;
     margin: 0 auto;
     gap: 1.5rem;
-    padding-bottom: 2rem;
+    padding-block-end: 2rem;
     border-radius: 0 0 2.5rem 2.5rem;
 }
 
@@ -63,19 +63,21 @@ h1, h2, p {
 
 .score {
     background: var(--gradient1);
-    min-width: 9rem;    /* is there a better way to shape this circle? */
-    min-height: 9rem;   /* needs a min-height? auto doesnt work and without it its a oval */
+    width: 9rem;    /* is there a better way to shape this circle? */
+    aspect-ratio: 1 / 1;
     margin: 0 auto;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .your-score {
     font-size: 4rem;
-    line-height: 4rem; /* how else could I get rid of the gap between .your-score and .out-of? default gap is barely too big */
+    margin: -0.5rem;  /* should I use -margin or line-height? any different options? */
+    /* line-height: 4rem; */ /* how else could I get rid of the gap between .your-score and .out-of? default gap is barely too big */
     color: var(--white)
 }
 
@@ -136,13 +138,11 @@ h1, h2, p {
     border-radius: 0.5rem;
 }
 
-.sec-bars h2, .sec-bars p {
+.sec-bars p {
     font-size: 1.1rem;
 }
-.sec-bars h2 {
-    font-weight: 400;
-}
-.sec-bars p {
+
+.cat-score {
     color: var(--navy950);
     font-weight: 600;
 }
@@ -185,7 +185,7 @@ h1, h2, p {
 
 @media screen and (min-width: 750px) {
     html { 
-        font-size: 18px;
+        font-size: 1.1rem;
     }
     body {
         background-color: var(--blue50);
@@ -202,8 +202,7 @@ h1, h2, p {
     }
 
     .score {
-        min-height: 12rem;
-        min-width: 12rem;
+        width: 12rem;
     }
 
     .results {
