@@ -56,14 +56,14 @@ h1, h2, p {
 }
 
 .your-result {
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 0 auto; 
     font-size: 1.2rem;
     color: var(--navy200)
 }
 
 .score {
     background: var(--gradient1);
-    min-width: 9rem;
+    min-width: 9rem;    /* is there a better way to shape this circle? */
     min-height: 9rem;   /* needs a min-height? auto doesnt work and without it its a oval */
     margin: 0 auto;
     border-radius: 50%;
@@ -86,9 +86,6 @@ h1, h2, p {
 .out-of {
     opacity: 50%;
 }
-.comparing {
-    font-weight: 400;
-}
 
 .congrats {  
     display: flex;
@@ -103,6 +100,10 @@ h1, h2, p {
 .great {
     font-size: 1.5rem;
     color: var(--white)
+}
+
+.comparing {
+    font-weight: 400;
 }
 
 .text-summary {
@@ -126,7 +127,6 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
 }
 
 .sec-bars > div {
@@ -165,7 +165,7 @@ h1, h2, p {
 }
 
 .left {
-    display: flex;
+    display: flex; /* insures the section logo and h2 stay next to each other and voids the space between on the sec-bars */
     gap: 0.5rem;
 }
 
