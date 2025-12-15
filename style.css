@@ -29,7 +29,7 @@ body {
     margin: 0;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -129,13 +129,15 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-inline-start: 0;
 }
 
-.sec-bars > div {
+.sec-bars > li {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     border-radius: 0.5rem;
+    
 }
 
 .sec-bars p {
