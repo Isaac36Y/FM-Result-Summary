@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+    <div class="results">
+      <h1 class="your-result">Your Result</h1>
+      <h2 class="score">
+        <span class="your-score">76</span> <!-- break the h2 up for easier styling. proper use of h2?  -->
+        <span class="out-of">of 100</span>
+      </h2>
+      <div class="congrats">
+        <p class="great">Great</p> 
+        <p class="comparing">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>  
+    <div class="text-summary">
+      <h1 class="summary">Summary</h1>
+      <div class="sec-bars">
+        <div class="reaction">
+          <div class="left"> <!-- img and h2 in seperate div to keep them together when space-between is applied -->
+            <img src="./assets/images/icon-reaction.svg" alt="lightning bolt" class="reaction-img">
+            <h2 class="category">Reaction</h2>
+          </div>
+          <p class="cat-score">80<span> / 100</span></p>
+        </div>
+        <div class="memory">
+          <div class="left">
+            <img src="./assets/images/icon-memory.svg" alt="brain" class="memory-img">
+            <h2 class="category">Memory</h2>
+          </div>
+          <p class="cat-score">92<span> / 100</span></p>
+        </div>
+        <div class="verbal">
+          <div class="left">
+            <img src="./assets/images/icon-verbal.svg" alt="quotation box" class="verbal-img">
+            <h2 class="category">Verbal</h2>
+          </div>
+          <p class="cat-score">61<span> / 100</span></p>
+        </div>
+        <div class="visual">
+          <div class="left">
+            <img src="./assets/images/icon-visual.svg" alt="eyeball" class="visual-img">
+            <h2 class="category">Visual</h2>
+          </div>
+          <p class="cat-score">72<span> / 100</span></p>
+        </div>
+      </div>
+      <button class="continue" type="button">Continue</button>
+    </div>
+  
+    
+</main>
+  
+ <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
